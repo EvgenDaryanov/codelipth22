@@ -1,0 +1,209 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: normal;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  width: 100%;
+  background-color: #09080A;
+  color: white;
+  font-family: "Inter";
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #151317;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+header .header__container {
+  max-width: 1170px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+header .header__container .header__container-logo {
+  text-decoration: none;
+  color: white;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main .main__container-articles {
+  max-width: 1170px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+main .main__container-articles .articles__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 330px;
+  height: 310px;
+  background-color: #1E1B20;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+main .main__container-articles .articles__item .articles__item-image {
+  height: 185px;
+  width: 330px;
+  border-radius: 20px 20px 0px 0px;
+  background: url("/img/articleimg.jpg"), lightgray 50%/cover no-repeat;
+  margin-bottom: 5px;
+}
+main .main__container-articles .articles__item .articles__item-text {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px 15px 15px;
+  max-width: 330px;
+}
+main .main__container-articles .articles__item .articles__item-text .articles__item-title {
+  color: #FFF;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 5px;
+}
+main .main__container-articles .articles__item .articles__item-text .articles__item-content {
+  color: #5E5E5F;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 15px;
+}
+main .main__container-articles .articles__item .articles__item-text .articles__item-readmore {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  -webkit-text-decoration: None;
+          text-decoration: None;
+  color: #5E5E5F;
+  transition: color 0.2s ease-in-out;
+}
+main .main__container-articles .articles__item .articles__item-text .articles__item-readmore:hover {
+  color: wheat;
+}
+main .main-container-pagination {
+  display: flex;
+  width: 100%;
+}
+main .main-container-pagination .pagintaion__container {
+  display: flex;
+  max-width: 1170px;
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+}
+main .main-container-pagination .pagintaion__container .pagintaion__item {
+  display: flex;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #1E1B20;
+  transition: color 0.2s ease-in-out;
+}
+main .main-container-pagination .pagintaion__container .pagintaion__item:hover {
+  color: wheat;
+}
